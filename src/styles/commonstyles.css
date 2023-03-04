@@ -1,0 +1,356 @@
+body{
+    font-family: "Amazon Ember",Arial,sans-serif;
+    /* background-image: url('../images/s1.jpg'); */
+    background-color: #e3e6e6;
+}
+*{
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    height: 60px;
+    background-color: #131921;
+    color: wheat;
+
+}
+
+.navbar > div{
+    background-color:#131921;
+    margin: 10px;
+    padding: 2px    ;
+    line-height: 5px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.navbar > div:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#logo{
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5px;
+    width: 100px;
+}
+.location{
+    padding-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+}
+#ddown:hover{
+border: none;
+}
+.dropdownbtn{
+    /* border: 2px solid blue; */
+    background-color: white;
+    padding: 0px;
+    height: 34px;
+    border: none;
+    border-right: 1px solid gray;
+    width: 45px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.dropdownbtn:hover{
+    cursor: pointer;
+}
+#searchbtn{
+    background-color: #febd69;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 34px;
+    width: 40px;
+    padding: 0px;
+}
+#searchbtn:hover{
+    cursor: pointer;
+    background-color: #ce9a57;
+}
+.searchinput{
+    background-color: #fff;
+    height: 34px;
+    width: 650px;
+    border: none;
+}
+
+
+
+#language{
+    padding-top: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+#signin{
+    padding-top: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#returnandorders{
+    padding-top: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cart{
+    padding-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+}
+
+#ddlist{
+    height: 300px;
+    width: 180px;
+    border: 1px solid gray;
+    margin: -10px 0px 0px 250px;
+    overflow: scroll;
+    display: none;
+    z-index: 5;
+    position: absolute;
+}
+#ddlist ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#ddlist li {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 2px;
+}
+#ddlist li:hover{
+    background-color: royalblue;
+}
+
+
+/* stylng of the second navbar ? */
+
+
+#secondnavbar{
+    background-color: #232f3e;
+    height: 40px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+#secondnavbar ul{
+    margin-left: 0px;
+    padding: 0px;
+    list-style: none;
+
+}
+#secondnavbar li{
+    display: inline-block;
+    /* border: 1px solid white; */
+    margin-top: 0px;
+    height: 36px;
+    color: white;
+    margin-left: 8px;
+    border-radius: 2px;
+    line-height: 40px;
+    padding: 0px 5px 0px 5px;
+}
+
+#secondnavbar li:hover{
+    cursor: pointer;
+    border: 1px solid white;
+
+}
+
+#secondnavbar ul #shopnow{
+    margin-left: 640px;
+}
+
+/* styling of the slider here */
+#slider {
+    /* z-index: -1;
+    position: relative; */
+    width: 100%;
+    
+    background-color: royalblue;
+    margin-top: 10px;
+    z-index: -1;
+
+}
+
+/* #slider img{
+    width: 100%;
+    height: 100%;
+    left: 9999;
+    right: -9999;
+    margin-top: 200px;
+} */
+
+    #slider #leftbtn{
+        position: absolute;
+        top: 33%;
+        left: 2.3%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: transparent;
+        color: rgb(28, 24, 24);
+        font-size: 42px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        height: 218px;
+        width: 56px;
+    }
+    #slider #rightbtn{
+        position: absolute;
+        top: 33%;
+        left: 97.8%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: transparent;
+        color: rgb(28, 24, 24);
+        font-size: 42px;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        height: 218px;
+        width: 56px;
+    }
+
+    /* styling of the cards */
+  
+    #cards{
+        /* height: auto; */
+        display: flex;
+        max-width: 1480px;
+        margin: 20px;
+        position: relative;
+    }
+
+    #card1{
+        border: 1px solid white;
+        height: 350px;
+        position: relative;
+        width: 250px;
+        padding: 20px;
+        margin-left: 12px;
+        /* margin: 20px; */
+        background-color: white;
+        box-shadow: 1px 4px 9px -1px
+    }
+/* styling the back to top file  */
+
+#signup{
+    box-sizing: border-box;
+    width: 99%;
+    border:1px solid #8d8989;
+    height: 150px;
+    border-radius: 5px 5px 0px 0px;
+    /* background-color: gray; */
+}
+
+#signupbox{
+    width: 300px;
+    height: 96px;
+    /* background-color: red; */
+    /* width: 100%; */
+    margin: auto;
+    margin-top: 30px;
+    color: #57171f;
+}
+#signupbox button{
+    background-color: #ffc940;
+    width: 254px;
+    height: 33px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid yellow;
+    
+    margin: 5px;
+
+}
+#signupbox p{
+    color: red;
+    margin-left: 53px;
+    display: inline;
+    color: black;
+}
+#signupbox a{
+
+    color: red;
+    font-size: 13px;
+    display: inline;
+    color: #1c1c2f;
+    cursor: pointer;
+    margin-left: 0px;
+    text-decoration: none;
+
+}
+#signupbox a:hover{
+    color: rgb(106, 41, 41);
+}
+#back{
+        width: 100%;
+        height: 50px;
+        background-color: #253649;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        font-family: inherit;
+    }
+#back:hover{
+    opacity: 0.9;
+}
+
+#footer{
+    background-color: #1e2a38;
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+    margin: -21px 0px 0px 0px;
+    text-align: center;
+    color: white;
+}
+#sidebar{
+    box-sizing: border-box;
+    height: 525px;
+    width: 0px;
+    background-color: white;
+    margin-top: -1859px;
+    position: relative;
+    z-index: 4;
+    transition: 0.5s ease-out;
+    line-height: 525px;
+    color: royalblue;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 1px solid gray;
+}
+#sidebarbox{
+    width: 100%;
+    height: 50px;
+    background-color: #232f3e;
+}
+#sidebarbox button{
+    background-color: transparent;
+    float: right;
+    height: 28px;
+    line-height: px;
+    width: 28px;
+    margin: 2px;
+    color: white;
+    font-size: 23px;
+    border: none;
+    cursor: pointer;
+}
+
